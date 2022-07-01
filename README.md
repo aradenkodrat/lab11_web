@@ -145,7 +145,7 @@ Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat 
 
 
 • Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
-![image](https://user-images.githubusercontent.com/101814131/175824720-f5f0b72a-9cf4-484d-9f9f-776600420d54.png)
+
 ![image](https://user-images.githubusercontent.com/101814131/175824729-61d33215-f93c-4026-8886-ed6b18c5abfd.png)
 
 
