@@ -20,7 +20,8 @@ Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan di
 
 
 3.Instalasi Codeigniter 4 Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara manual dan menggunakan composer. Pada praktikum ini kita menggunakan cara manual. • Unduh Codeigniter dari website https://codeigniter.com/download • Extrak file zip Codeigniter ke direktori htdocs/lab11_ci. • Ubah nama direktory framework-4.x.xx menjadi ci4. • Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/
-![image](https://user-images.githubusercontent.com/101814131/175823997-a1c89332-8b90-4774-8a35-246c768133d6.png)
+![image](https://user-images.githubusercontent.com/101814131/176965173-6f436240-e73e-4e67-8f3f-0d2e30893271.png)
+
 
 
 4.Menjalankan CLI (Command Line Interface) Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk mengakses CLI buka terminal/command prompt. Kemudian arahkan lokasi direktori sesuai dengan direktori kerja project dibuat (xampp/htdocs/lab11_ci/ci4/)
@@ -32,7 +33,8 @@ Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah:
 
 5.Mengaktifkan Mode Debugging Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program. Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
 
-![image](https://user-images.githubusercontent.com/101814131/175824049-9a17d165-ea58-4d2b-91e3-a2fb90f29544.png)
+![image](https://user-images.githubusercontent.com/101814131/176965291-bc01c44e-8736-4a3c-812e-307e794c7f27.png)
+
 
 
 Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRINMENT menjadi development. Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRINMENT menjadi development.
@@ -42,7 +44,8 @@ Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis error
 Contoh eror Untuk mencoba error tersebut, ubah kode pada file app/Controller/Home.php hilangkan titik koma pada akhir kode.
 
 ![image](https://user-images.githubusercontent.com/101814131/175824075-91da8a79-ceb7-402b-953d-077d877d0966.png)
-![image](https://user-images.githubusercontent.com/101814131/175824089-050324fa-6233-4c7b-98cc-55bae46568cd.png)
+![image](https://user-images.githubusercontent.com/101814131/176965372-b51ac729-8986-470c-8745-48b837c36c2b.png)
+
 
 
 7.Membuat route baru dalam Routes.php Tambahkan kode berikut ini pada Routes.php
@@ -51,7 +54,8 @@ Contoh eror Untuk mencoba error tersebut, ubah kode pada file app/Controller/Hom
 
 
 Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about seperti berikut. Maka hasilnya akan terjadi error, yang artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
-![image](https://user-images.githubusercontent.com/101814131/175824156-7abc745f-d009-4839-bf67-830784d4448d.png)
+![image](https://user-images.githubusercontent.com/101814131/176965424-916595ec-72a8-4326-99b4-08c5521435ff.png)
+
 
 
 8.Membuat Controller Kemudian membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
@@ -59,7 +63,8 @@ Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http:
 
 
 Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaotu halaman sudah dapat diakses.
-![image](https://user-images.githubusercontent.com/101814131/175824191-f39ff240-542b-49cd-941e-d9bba61d6617.png)
+![image](https://user-images.githubusercontent.com/101814131/176965486-681bcb72-ee01-491e-b335-8b7c5ec98d38.png)
+
 
 
 9.Auto Routing Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
@@ -67,7 +72,8 @@ Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaotu halama
 
 
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
-![image](https://user-images.githubusercontent.com/101814131/175824218-21f1b478-a93d-40c7-a1ca-0e3958dc1bfa.png)
+![image](https://user-images.githubusercontent.com/101814131/176965750-72f0bc49-d217-4a88-8f53-b949c11cb712.png)
+
 
 
 10.Membuat View Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about.php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
@@ -79,7 +85,8 @@ Ubah method about pada class Controller Page menjadi seperti berikut:
 
 
 Kemudian lakukan refresh pada halaman tersebut.
-![image](https://user-images.githubusercontent.com/101814131/175824674-bcf369bf-a3c3-4831-93bd-c9a68504ca3d.png)
+![image](https://user-images.githubusercontent.com/101814131/176965831-36b11b2b-7ae9-4592-a48c-b64b528d54a4.png)
+
 
 
 
@@ -103,7 +110,8 @@ File app/view/template/about.php
 
 
 Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
-![image](https://user-images.githubusercontent.com/101814131/175825693-a424d261-728b-4ba4-a077-ef8c17ab929f.png)
+![image](https://user-images.githubusercontent.com/101814131/176965941-3fae695b-15a8-43ea-a45b-f0458327a750.png)
+
 
 PERTEMUAN 13
 Membuat Database
@@ -213,7 +221,8 @@ Selanjutnya buka kembali CLI dan ketik perintah berikut:
 
 
 Uji Coba Login Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
-![image](https://user-images.githubusercontent.com/101814131/175825538-8eb16dc8-263c-489b-888b-298d3d1fc248.png)
+![image](https://user-images.githubusercontent.com/101814131/176966080-b60e1a86-5546-4e67-91a8-fe387674d596.png)
+
 
 
 Menambahkan Auth Filter, selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters.
@@ -229,7 +238,8 @@ Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
 
 
 Percobaan Akses Menu Admin, buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka, akan dimuculkan halaman login.
-![image](https://user-images.githubusercontent.com/101814131/175825567-4e769e79-0fa7-4e5d-a9bf-86dcbe0abb1f.png)
+![image](https://user-images.githubusercontent.com/101814131/176966150-ac7bd588-d2e6-4f0b-b628-236c58c7d365.png)
+
 
 
 Fungsi Logout, tambahkan method logout pada Controller User seperti berikut:
@@ -242,7 +252,8 @@ Kemudian tambahkan navbar pada admin_header seperti berikut:
 
 Ketika kita klik navbar maka akan langsunh mengarah pada halaman login.
 
-![image](https://user-images.githubusercontent.com/101814131/175825587-9ba4ae18-945d-48a6-8f35-67516ac27eca.png)
+![image](https://user-images.githubusercontent.com/101814131/176966217-680ffc03-f250-42ff-b505-b992570529ea.png)
+
 
 pertemuan ke 15
 
@@ -256,7 +267,8 @@ Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut diba
 
 
 Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
-![image](https://user-images.githubusercontent.com/101814131/176913538-f95b6303-e439-4e20-9b61-353240c14b4f.png)
+![image](https://user-images.githubusercontent.com/101814131/176966267-e4aeee96-08cb-4616-81ad-894bc4cbfce8.png)
+
 
 
 4.Membuat Pencarian, pencarian data digunakan untuk memfilter data. Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut:
@@ -273,7 +285,8 @@ Dan pada link pager ubah seperti berikut.
 
 
 Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
-![image](https://user-images.githubusercontent.com/101814131/176913775-77252464-e417-4a34-9294-bc1fb037fc8c.png)
+
+![image](https://user-images.githubusercontent.com/101814131/176966349-84207999-9742-4f03-8eea-23caf0376ec5.png)
 
 
 Upload Gambar, menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel, sesuaikan kode pada method add seperti berikut:
@@ -289,7 +302,8 @@ Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
 
 
 Ujicoba file upload dengan mengakses menu tambah artikel.
-![image](https://user-images.githubusercontent.com/101814131/176914025-8eaed72e-6f16-4632-b8fb-ac4c13e6e56e.png)
+![image](https://user-images.githubusercontent.com/101814131/176966440-2d6f58f9-23cd-4ea1-b955-68af455b97f7.png)
+
 
 
 
